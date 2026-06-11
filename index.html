@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>亚瑟 | Arthur</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 粒子背景 -->
+  <canvas id="particles"></canvas>
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">亚瑟</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">首页</a></li>
+      <li><a href="#about">关于</a></li>
+      <li><a href="#works">作品</a></li>
+      <li><a href="#blog">博客</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- 首页 Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-greeting">你好，我是</div>
+      <h1 class="hero-name">亚瑟<span class="dot">.</span></h1>
+      <div class="hero-role">
+        <span class="typing-text" id="typingText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">热爱创造，专注于技术与创意的交汇点。</p>
+      <div class="hero-btns">
+        <a href="#works" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>向下滚动</span>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="ri-user-line"></i>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            嗨，我是<strong>亚瑟</strong>。一个热爱技术、设计和创造的人。
+            我相信好的作品源于对细节的执着和对用户体验的追求。
+          </p>
+          <p class="about-text">
+            我擅长将创意转化为现实，无论是网站、工具还是自动化系统，
+            我都享受从零到一的构建过程。
+          </p>
+          <div class="skills">
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">AI 自动化</div>
+            <div class="skill-tag">Web 开发</div>
+            <div class="skill-tag">数据分析</div>
+            <div class="skill-tag">创意设计</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品 -->
+  <section id="works" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">精选作品</h2>
+      <div class="works-filter">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="web">网站</button>
+        <button class="filter-btn" data-filter="tool">工具</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+      <div class="works-grid">
+        <div class="work-card" data-category="tool">
+          <div class="work-image">
+            <div class="work-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+              <i class="ri-robot-line"></i>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3>头条自动化发文系统</h3>
+            <p>全自动热点采集、AI生成文章、智能配图、定时发布</p>
+            <div class="work-tags">
+              <span>Python</span><span>AI</span><span>自动化</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card" data-category="ai">
+          <div class="work-image">
+            <div class="work-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+              <i class="ri-mic-line"></i>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3>AI 配音工作流</h3>
+            <p>基于 GPT-SoVITS 的语音克隆与自动配音系统</p>
+            <div class="work-tags">
+              <span>语音合成</span><span>深度学习</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card" data-category="web">
+          <div class="work-image">
+            <div class="work-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+              <i class="ri-global-line"></i>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3>携程旅游攻略系统</h3>
+            <p>自动采集热点、生成真实旅游攻略、一键发布</p>
+            <div class="work-tags">
+              <span>Scrapling</span><span>Playwright</span><span>DeepSeek</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card" data-category="tool">
+          <div class="work-image">
+            <div class="work-placeholder" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3>LibTV CLI 工具</h3>
+            <p>AI 图像/视频生成画布的命令行操作工具</p>
+            <div class="work-tags">
+              <span>CLI</span><span>AI绘画</span><span>工作流</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 博客 -->
+  <section id="blog" class="section">
+    <div class="container">
+      <h2 class="section-title">最新博客</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-date">2026.05.21</div>
+          <h3>如何用 AI 构建全自动内容生产线</h3>
+          <p>从热点采集到文章生成、配图、发布的完整工作流设计思路...</p>
+          <a href="#" class="blog-link">阅读全文 <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="blog-card">
+          <div class="blog-date">2026.05.15</div>
+          <h3>Python 自动化爬虫的合法边界</h3>
+          <p>在使用 Scrapling 等工具时，如何确保行为合法合规...</p>
+          <a href="#" class="blog-link">阅读全文 <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="blog-card">
+          <div class="blog-date">2026.05.10</div>
+          <h3>开源 TTS 模型横评：哪个最适合中文配音？</h3>
+          <p>GPT-SoVITS、ChatTTS、CosyVoice 深度对比...</p>
+          <a href="#" class="blog-link">阅读全文 <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <div class="contact-content">
+        <p class="contact-desc">有想法？想合作？随时联系我。</p>
+        <div class="contact-links">
+          <a href="mailto:your@email.com" class="contact-item">
+            <i class="ri-mail-line"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/" target="_blank" class="contact-item">
+            <i class="ri-github-line"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="#" class="contact-item">
+            <i class="ri-wechat-line"></i>
+            <span>WeChat</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>&copy; 2026 亚瑟. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
