@@ -93,59 +93,101 @@
         <button class="filter-btn" data-filter="ai">AI</button>
       </div>
       <div class="works-grid">
+        <!-- 1. 头条自动化 -->
         <div class="work-card" data-category="tool">
           <div class="work-image">
             <div class="work-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">
-              <i class="ri-robot-line"></i>
+              <i class="ri-newspaper-line"></i>
             </div>
           </div>
           <div class="work-info">
-            <h3>头条自动化发文系统</h3>
-            <p>全自动热点采集、AI生成文章、智能配图、定时发布</p>
+            <h3>头条婚姻情感全自动发文系统</h3>
+            <p>每日自动采集热点 → AI 生成原创文章 → 智能配图 → 定时发布 → 数据回收，全流程无人值守</p>
             <div class="work-tags">
-              <span>Python</span><span>AI</span><span>自动化</span>
+              <span>Python</span><span>DeepSeek</span><span>Playwright</span><span>Scrapling</span>
             </div>
+            <a href="projects/toutiao/README.md" class="blog-link" style="margin-top:12px;">项目详情 <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
-        <div class="work-card" data-category="ai">
-          <div class="work-image">
-            <div class="work-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-              <i class="ri-mic-line"></i>
-            </div>
-          </div>
-          <div class="work-info">
-            <h3>AI 配音工作流</h3>
-            <p>基于 GPT-SoVITS 的语音克隆与自动配音系统</p>
-            <div class="work-tags">
-              <span>语音合成</span><span>深度学习</span><span>Python</span>
-            </div>
-          </div>
-        </div>
+
+        <!-- 2. 携程自动化 -->
         <div class="work-card" data-category="web">
           <div class="work-image">
             <div class="work-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
-              <i class="ri-global-line"></i>
+              <i class="ri-flight-takeoff-line"></i>
             </div>
           </div>
           <div class="work-info">
-            <h3>携程旅游攻略系统</h3>
-            <p>自动采集热点、生成真实旅游攻略、一键发布</p>
+            <h3>携程旅行笔记全自动发文系统</h3>
+            <p>每日 6 篇旅行攻略自动发布，真实数据填充，图片拼接防检测，参与创作激励计划</p>
             <div class="work-tags">
-              <span>Scrapling</span><span>Playwright</span><span>DeepSeek</span>
+              <span>Python</span><span>Playwright</span><span>Pillow</span><span>Scrapling</span>
             </div>
+            <a href="projects/ctrip/README.md" class="blog-link" style="margin-top:12px;">项目详情 <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
-        <div class="work-card" data-category="tool">
+
+        <!-- 3. LibTV CLI -->
+        <div class="work-card" data-category="ai">
           <div class="work-image">
             <div class="work-placeholder" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
-              <i class="ri-code-s-slash-line"></i>
+              <i class="ri-image-line"></i>
             </div>
           </div>
           <div class="work-info">
-            <h3>LibTV CLI 工具</h3>
-            <p>AI 图像/视频生成画布的命令行操作工具</p>
+            <h3>LibTV CLI — AI 画布命令行工具</h3>
+            <p>集成 LibLib AI 的 CLI 工具，命令行操作 AI 图像/视频生成画布，项目管理、节点操作、模型搜索</p>
             <div class="work-tags">
-              <span>CLI</span><span>AI绘画</span><span>工作流</span>
+              <span>CLI</span><span>AI 绘画</span><span>Claude Code Skill</span>
+            </div>
+            <a href="projects/libtv-cli/README.md" class="blog-link" style="margin-top:12px;">项目详情 <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- 4. Claude Code Skills -->
+        <div class="work-card" data-category="tool">
+          <div class="work-image">
+            <div class="work-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+              <i class="ri-terminal-box-line"></i>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3>Claude Code 自定义 Skills 集合</h3>
+            <p>代码审查、Bug 修复、测试生成、代码解释、代码优化 — 让 AI 更懂中文开发者</p>
+            <div class="work-tags">
+              <span>Claude Code</span><span>Skill</span><span>开发工具</span>
+            </div>
+            <a href="projects/skills/README.md" class="blog-link" style="margin-top:12px;">项目详情 <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 演示视频区 -->
+      <div style="margin-top:80px;">
+        <h2 class="section-title">演示视频</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <h3>🎬 头条自动化 — 全流程演示</h3>
+            <p>从热点采集到文章发布的完整工作流录屏</p>
+            <div class="video-placeholder" style="background:#1a1a2e;border:2px dashed #667eea;border-radius:12px;padding:60px 20px;text-align:center;margin-top:16px;">
+              <i class="ri-play-circle-line" style="font-size:3rem;color:#667eea;"></i>
+              <p style="color:#71717a;margin-top:12px;">视频待上传</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <h3>🎬 携程自动化 — 全流程演示</h3>
+            <p>旅行笔记从采集到发布的完整工作流录屏</p>
+            <div class="video-placeholder" style="background:#1a1a2e;border:2px dashed #667eea;border-radius:12px;padding:60px 20px;text-align:center;margin-top:16px;">
+              <i class="ri-play-circle-line" style="font-size:3rem;color:#667eea;"></i>
+              <p style="color:#71717a;margin-top:12px;">视频待上传</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <h3>🎬 Claude Code Skills 演示</h3>
+            <p>自定义 Skill 的开发与使用演示</p>
+            <div class="video-placeholder" style="background:#1a1a2e;border:2px dashed #667eea;border-radius:12px;padding:60px 20px;text-align:center;margin-top:16px;">
+              <i class="ri-play-circle-line" style="font-size:3rem;color:#667eea;"></i>
+              <p style="color:#71717a;margin-top:12px;">视频待上传</p>
             </div>
           </div>
         </div>
@@ -191,7 +233,7 @@
             <i class="ri-mail-line"></i>
             <span>Email</span>
           </a>
-          <a href="https://github.com/" target="_blank" class="contact-item">
+          <a href="https://github.com/liucilin7788-oss" target="_blank" class="contact-item">
             <i class="ri-github-line"></i>
             <span>GitHub</span>
           </a>
